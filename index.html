@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dipak Pandurang Suryavanshi - UX Design Leader</title>
+    <title>Dipak Suryavanshi - UX/UI Design Leader</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,6 @@
         .timeline {
             position: relative;
             padding-left: 2.5rem;
-            border-left: 4px solid #444e86;
         }
         .timeline-item {
             position: relative;
@@ -68,6 +67,33 @@
             font-weight: 500;
             margin: 0.25rem;
         }
+        details > summary {
+            list-style: none;
+            cursor: pointer;
+            position: relative;
+            outline: none;
+            padding: 0.5rem 0;
+            transition: color 0.2s ease;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary:after {
+            transform: rotate(90deg);
+        }
+        summary:after {
+            content: "+";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            transition: transform 0.2s ease;
+        }
+        details[open] summary:after {
+            content: "-";
+            font-size: 1.5rem;
+        }
     </style>
 </head>
 <body class="text-gray-800">
@@ -75,8 +101,8 @@
     <div class="container mx-auto p-4 md:p-8">
 
         <header class="text-center mb-12">
-            <h1 class="text-4xl md:text-6xl font-black text-[#003f5c] tracking-tight">Dipak Pandurang Suryavanshi</h1>
-            <p class="text-xl md:text-2xl text-[#444e86] font-medium mt-2">A Career in Driving User-Centric Transformation</p>
+            <h1 class="text-4xl md:text-6xl font-black text-[#003f5c] tracking-tight">Dipak Suryavanshi</h1>
+            <p class="text-xl md:text-2xl text-[#444e86] font-medium mt-2">A Career in Driving User-Centric Transformation & Technical Implementation</p>
         </header>
 
         <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -84,7 +110,7 @@
             <div class="stat-card md:col-span-1 lg:col-span-1 flex flex-col items-center justify-center text-center">
                 <div class="text-8xl font-black text-[#dd5182]">18+</div>
                 <div class="text-2xl font-bold text-[#003f5c] mt-2">Years of Experience</div>
-                <p class="mt-2 text-gray-600">Leading design strategy across B2B & B2C products in diverse global industries.</p>
+                <p class="mt-2 text-gray-600">Leading design and technical implementation across B2B & B2C products in diverse global industries.</p>
             </div>
             
             <div class="stat-card md:col-span-1 lg:col-span-2">
@@ -129,31 +155,89 @@
             
             <div class="stat-card md:col-span-2 lg:col-span-2">
                 <h2 class="text-2xl font-bold text-[#003f5c] mb-6">Career Journey</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <h3 class="font-bold text-lg text-[#444e86]">UX Architect/Manager @ KPIT Technologies</h3>
-                        <p class="text-sm text-gray-500">2022 - Present</p>
+                <div class="timeline border-l-4 border-[#444e86] pl-12">
+                    <details class="timeline-item">
+                        <summary class="font-bold text-lg text-[#444e86]">
+                            <div class="timeline-dot"></div>
+                            UX Architect/Manager @ KPIT Technologies
+                        </summary>
+                        <p class="text-sm text-gray-500 mt-2 mb-2">2022 - Present</p>
                         <p class="text-gray-600 mt-1">Pioneering UX for SDV & AI in Automotive. Driving cultural change and implementing a global Design System.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <h3 class="font-bold text-lg text-[#444e86]">UX & Operations Manager @ CDK Global</h3>
-                        <p class="text-sm text-gray-500">2017 - 2022</p>
-                        <p class="text-gray-600 mt-1">Managed a 30-person team, streamlined design ops to save millions, and defined UX architecture for automotive solutions.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <h3 class="font-bold text-lg text-[#444e86]">Deputy Manager UX/UI @ Majesco</h3>
-                        <p class="text-sm text-gray-500">2016 - 2017</p>
+                        <ul class="list-disc ml-6 space-y-2 text-gray-600">
+                            <li>Improved Customer Satisfaction Scores (CSAT) for existing products from "Red" to "Green" based on UX metrics.</li>
+                            <li>Boosted Net Promoter Scores (NPS) for both existing and new products by 70%.</li>
+                            <li>Reported directly to the Head of Products, contributing to strategic product direction.</li>
+                            <li>Pioneered a shift in the "Engineers building products for Engineers" mindset within the Automotive division by conducting impactful workshops and integrating AI (Gemini/ChatGPT) for research.</li>
+                            <li>Initiated, designed, and implemented an organization-wide Design System, significantly enhancing product’s consistency and efficiency. Leading a team of 4 smart people.</li>
+                            <li>Focused on integrating the latest trends: Software-Defined Vehicles (SDV), Service-Oriented Vehicle Diagnostics (SOVD), Data, and AI. Working on over 15+ products.</li>
+                        </ul>
+                    </details>
+                    <details class="timeline-item">
+                        <summary class="font-bold text-lg text-[#444e86]">
+                            <div class="timeline-dot"></div>
+                            UX & Operations Manager @ CDK Global
+                        </summary>
+                         <p class="text-sm text-gray-500 mt-2 mb-2">2017 - 2022</p>
+                         <p class="text-gray-600 mt-1">Managed a 30-person team, streamlined design ops to save millions, and defined UX architecture for automotive solutions.</p>
+                         <ul class="list-disc ml-6 space-y-2 text-gray-600">
+                            <li>Managed and mentored a team of 30 UX/UI professionals (hiring, performance management etc.).</li>
+                            <li>Streamlined multiple design operations processes, resulting in millions of dollars in savings by eliminating unnecessary practices and optimizing resource allocation.</li>
+                            <li>Executed user and business needs by collaborating closely with stakeholders, developing comprehensive UX design strategies and UX architectures.</li>
+                            <li>Directed project planning, scope definition, resource allocation, and cost estimations.</li>
+                            <li>Recognized with multiple "Leadership Pinnacle" awards from VP & SVP leadership, and received a promotion for outstanding contributions. Worked on Dealership Management System, and AdTech products.</li>
+                        </ul>
+                    </details>
+                    <details class="timeline-item">
+                        <summary class="font-bold text-lg text-[#444e86]">
+                            <div class="timeline-dot"></div>
+                            Deputy Manager UX/UI @ Majesco Ltd.
+                        </summary>
+                        <p class="text-sm text-gray-500 mt-2 mb-2">2016 - 2017</p>
                         <p class="text-gray-600 mt-1">Established design-led development and implemented Design Thinking in the Insurance tech space.</p>
-                    </div>
-                     <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <h3 class="font-bold text-lg text-[#444e86]">Lead UX/UI Designer Roles</h3>
-                        <p class="text-sm text-gray-500">2008 - 2016</p>
-                        <p class="text-gray-600 mt-1">Led design for FinTech products at FIS Global and provided solutions across Travel, E-commerce, and Healthcare at Extentia.</p>
-                    </div>
+                        <ul class="list-disc ml-6 space-y-2 text-gray-600">
+                            <li>Established the foundation for design-led product development for insurance products.</li>
+                            <li>Introduced and implemented Design Thinking practices across product teams.</li>
+                            <li>Educated teams on the value of building user-centered products and services, leading to improved customer experience. Worked on Policy Administration System product.</li>
+                        </ul>
+                    </details>
+                     <details class="timeline-item">
+                        <summary class="font-bold text-lg text-[#444e86]">
+                            <div class="timeline-dot"></div>
+                            Lead UX/UI Designer @ FIS Global
+                        </summary>
+                        <p class="text-sm text-gray-500 mt-2 mb-2">2013 - 2016</p>
+                        <p class="text-gray-600 mt-1">Crafted innovative FinTech products at FIS Global, leveraging extensive in-lab usability testing and user research.</p>
+                        <ul class="list-disc ml-6 space-y-2 text-gray-600">
+                            <li>Crafted innovative FinTech products, leveraging extensive in-lab usability testing and user research.</li>
+                            <li>Collaborated closely with product owners to align design with business objectives.</li>
+                            <li>Received multiple commendations for exceptional design contributions. Worked on IntelliMatch and Payment Investigation products.</li>
+                        </ul>
+                    </details>
+                     <details class="timeline-item">
+                        <summary class="font-bold text-lg text-[#444e86]">
+                            <div class="timeline-dot"></div>
+                            Lead UX/UI Designer @ Extentia
+                        </summary>
+                        <p class="text-sm text-gray-500 mt-2 mb-2">2008 - 2016</p>
+                        <p class="text-gray-600 mt-1">Provided comprehensive UX/UI solutions to multiple project teams, supporting over 100 developers.</p>
+                        <ul class="list-disc ml-6 space-y-2 text-gray-600">
+                            <li>Provided comprehensive UX/UI solutions to multiple project teams, supporting over 100 developers across diverse project/domains including Travel, E-commerce, and Healthcare.</li>
+                            <li>Collaborated closely with multiple project managers to ensure design consistency and effectiveness.</li>
+                            <li>Led a dedicated UX/UI team, guiding design execution and strategy.</li>
+                            <li>Forming, storming, norming, performing, and adjourning.</li>
+                        </ul>
+                    </details>
+                     <details class="timeline-item">
+                        <summary class="font-bold text-lg text-[#444e86]">
+                            <div class="timeline-dot"></div>
+                            UX Designer @ Niche Software Solutions
+                        </summary>
+                        <p class="text-sm text-gray-500 mt-2 mb-2">2006 - 2008</p>
+                        <p class="text-gray-600 mt-1">Executed UX design and UI development for various customer projects within the Healthcare sector.</p>
+                        <ul class="list-disc ml-6 space-y-2 text-gray-600">
+                            <li>Executed UX design and UI development for various customer projects within the Healthcare domain.</li>
+                        </ul>
+                    </details>
                 </div>
             </div>
 
@@ -193,6 +277,8 @@
                             <span class="tag">VS-Code</span>
                             <span class="tag">Gemini</span>
                             <span class="tag">ChatGPT</span>
+                            <span class="tag">Figma make</span>
+                            <span class="tag">Google Stitch</span>
                         </div>
                     </div>
                 </div>
@@ -275,7 +361,7 @@
                     labels: ['People Leadership', 'Business Acumen', 'UX Strategy', 'Technology & AI'],
                     datasets: [{
                         label: 'Core Expertise',
-                        data: [90, 85, 95, 80],
+                        data: [95, 90, 95, 90],
                         backgroundColor: 'rgba(221, 81, 130, 0.2)',
                         borderColor: brilliantBluesPalette.magenta,
                         pointBackgroundColor: brilliantBluesPalette.magenta,
